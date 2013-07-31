@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glut_base", "glut_base\glut_base.vcproj", "{34279352-3F69-475D-81C4-A5084572C108}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "roboarm", "roboarm\roboarm.vcproj", "{9674E610-DBD8-4546-BE7F-55B4D3B8472B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "collisiondetect", "collisiondetect\collisiondetect.vcproj", "{31A0C34E-BE19-4D2C-9DD5-66288384BDF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34279352-3F69-475D-81C4-A5084572C108}.Debug|Win32.ActiveCfg = Debug|Win32
+		{34279352-3F69-475D-81C4-A5084572C108}.Debug|Win32.Build.0 = Debug|Win32
+		{34279352-3F69-475D-81C4-A5084572C108}.Release|Win32.ActiveCfg = Release|Win32
+		{34279352-3F69-475D-81C4-A5084572C108}.Release|Win32.Build.0 = Release|Win32
+		{9674E610-DBD8-4546-BE7F-55B4D3B8472B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9674E610-DBD8-4546-BE7F-55B4D3B8472B}.Debug|Win32.Build.0 = Debug|Win32
+		{9674E610-DBD8-4546-BE7F-55B4D3B8472B}.Release|Win32.ActiveCfg = Release|Win32
+		{9674E610-DBD8-4546-BE7F-55B4D3B8472B}.Release|Win32.Build.0 = Release|Win32
+		{31A0C34E-BE19-4D2C-9DD5-66288384BDF4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{31A0C34E-BE19-4D2C-9DD5-66288384BDF4}.Debug|Win32.Build.0 = Debug|Win32
+		{31A0C34E-BE19-4D2C-9DD5-66288384BDF4}.Release|Win32.ActiveCfg = Release|Win32
+		{31A0C34E-BE19-4D2C-9DD5-66288384BDF4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
