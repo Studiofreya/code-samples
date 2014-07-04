@@ -4,6 +4,8 @@
 #include <iostream>
 #include "primitives.hpp"
 
+typedef AABB_minmax AABB;
+
 double SquaredDistPointAABB( const Point & p, const AABB & aabb )
 {
     auto check = [&]( const double pn, const double bmin, const double bmax ) -> double
@@ -55,13 +57,13 @@ int main()
     // AABB
     AABB aabb( Point(-1, -1, -1), Point(1,1,1) );
 
-    // Sphere 1 in the center with radious 1
+    // Sphere 1 in the center with radius 1
     Sphere s1( Point(0, 0, 0), 1 );
 
-    // Sphere 2 at x=1 with radious 1
+    // Sphere 2 at x=1 with radius 1
     Sphere s2( Point(1, 0, 0), 1 );
 
-    // Sphere 3 at x=3 with radious 1
+    // Sphere 3 at x=3 with radius 1
     Sphere s3( Point(3, 0, 0), 1 );
 
     bool t1 = TestSphereAABB( s1, aabb );

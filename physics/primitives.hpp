@@ -27,10 +27,10 @@ struct Point
 	}
 };
 
-struct AABB
+struct AABB_minmax
 {
-	AABB() : min(), max() {}
-	AABB( const Point & min, const Point & max ) 
+	AABB_minmax() : min(), max() {}
+	AABB_minmax( const Point & min, const Point & max ) 
 		: min(min)
 		, max(max)
 	{}
@@ -39,11 +39,11 @@ struct AABB
 	Point max;
 };
 
-struct AABB2
+struct AABB_center
 {
-	AABB2() : c(), r() {}
+	AABB_center() : c(), r() {}
 
-	AABB2(const Point & center, const Point & halfwidths)
+	AABB_center(const Point & center, const Point & halfwidths)
 		: c(center)
 		, r(halfwidths)
 	{}
