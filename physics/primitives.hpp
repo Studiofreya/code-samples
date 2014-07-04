@@ -1,6 +1,8 @@
 #if !defined (BASIC_PRIMITIVES_HPP_INCLUDED)
 #define       BASIC_PRIMITIVES_HPP_INCLUDED
 
+#include <assert.h>
+
 struct Point
 {
 	Point() {}
@@ -13,6 +15,16 @@ struct Point
 	double y = 0.0;
 	double z = 0.0;
 	double w = 0.0;
+
+	const double operator[](const int idx) const
+	{
+		if (idx == 0) return x;
+		if (idx == 1) return y;
+		if (idx == 2) return z;
+		if (idx == 3) return w;
+
+		assert(0);
+	}
 };
 
 struct AABB
@@ -25,6 +37,19 @@ struct AABB
 
 	Point min;
 	Point max;
+};
+
+struct AABB2
+{
+	AABB2() : c(), r() {}
+
+	AABB2(const Point & center, const Point & halfwidths)
+		: c(center)
+		, r(halfwidths)
+	{}
+
+	Point c;		// center point
+	Point r;		// halfwidths
 };
 
 struct Sphere
