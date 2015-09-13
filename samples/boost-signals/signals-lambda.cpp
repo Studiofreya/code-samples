@@ -1,8 +1,8 @@
-#include <stdio.h>				// std::cout
+#include <iostream>				// std::cout
 #include <boost/signals2.hpp>	// boost::signals2
 
 
-int main()
+int test3_lambda()
 {
 	// Shortcut typedefs
 	typedef	boost::signals2::signal<void(double)>	registration_manager;

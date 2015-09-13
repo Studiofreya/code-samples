@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <iostream>
 #include <boost/signals2.hpp>
 
 // Free function 1
@@ -13,7 +13,7 @@ void argument_2(double value)
 	std::cout << "Half argument " << value / 2.0 << std::endl;
 }
 
-int main()
+int test2_arguments()
 {
 	// Shortcut typedefs
 	typedef	boost::signals2::signal<void(double)>	registration_manager;

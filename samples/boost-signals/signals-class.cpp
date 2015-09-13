@@ -1,5 +1,5 @@
 #include <memory>				// std::shared_ptr
-#include <stdio.h>				// std::cout
+#include <iostream>				// std::cout
 #include <boost/signals2.hpp>	// boost::signals2
 
 class UtilityClass 
@@ -27,7 +27,7 @@ class UtilityClass
 
 };
 
-int main()
+int test4_class()
 {
 	// Shortcut typedefs
 	typedef	boost::signals2::signal<void(double)>	registration_manager;

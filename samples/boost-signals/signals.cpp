@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <iostream>
 #include <boost/signals2.hpp>
 
 // Free function 1
@@ -13,7 +13,7 @@ void no_arguments_2()
 	std::cout << "No arguments 2" << std::endl;
 }
 
-int main()
+int test1_signals()
 {
 	// Shortcut typedefs
 	typedef	boost::signals2::signal<void()>		registration_manager;
