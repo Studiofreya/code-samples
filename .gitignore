@@ -205,3 +205,4 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
 /samples/boost-signals/boost_1_58_0
+*.opendb
