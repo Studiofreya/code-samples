@@ -9,22 +9,22 @@ struct SomeStruct
 {
 	SomeStruct()
 	{
-		std::cout << "SomeStruct()" << std::endl;
+		std::cout << "SomeStruct()\n";
 	}
 
 	SomeStruct(int a)
 	{
-		std::cout << "SomeStruct(int a)" << std::endl;
+		std::cout << "SomeStruct(int a)\n";
 	}
 
 	SomeStruct(const std::string & str)
 	{
-		std::cout << "SomeStruct(const std::string & str)" << std::endl;
+		std::cout << "SomeStruct(const std::string & str)\n";
 	}
 
 	SomeStruct(const std::string & str, int a)
 	{
-		std::cout << "SomeStruct(const std::string & str, int a)" << std::endl;
+		std::cout << "SomeStruct(const std::string & str, int a)\n";
 	}
 
 };
@@ -40,9 +40,9 @@ class ClassWrapper
 
 	public:
 		template<typename ... Args>
-		static type_ptr Create(Args ...args)
+		static type_ptr Create(Args&&...args)
 		{
-			return type_ptr(new T(args...));
+			return type_ptr(new T(std::forward(args)...));
 		}
 
 };
